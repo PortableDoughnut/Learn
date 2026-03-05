@@ -33,6 +33,15 @@ struct Main {
     var pi: Double = 3.141592
     var isAwesome: Bool = true
 
+    var movies: Dictionary<String, Int> = [
+        "Coma": 2022,
+        "T Blockers": 2023,
+        "Peggy Sue Got Married": 1986,
+        "Grafted": 2024,
+        "Homemade Gatorade": 2025,
+        "Redux Redux": 2025
+    ]
+
     func printOutput() {
         print("\(age) year old \(name) founded \(town) which has a population of \(population)")
         print(multiLine)
@@ -48,6 +57,8 @@ var main: Main = .init()
 
 main.printOutput()
 
+main.movies["The Matrix"] = 1999
+
 var randomNumber: Int = Int.random(in: 21...420)
 
 print("""
@@ -55,3 +66,5 @@ print("""
 funny number, this makes \(main.perfume[Int.random(in: 0...3)])\
 very \(main.emotions[Int.random(in: 0...6)]).
 """)
+
+print(main.movies["The Matrix", default: 2000])
