@@ -15,6 +15,9 @@ struct Main {
     Gwen
     """
 
+    var perfume: [String] = ["Ayaka Nishiwaki", "Ayano Ōmoto", "Yuka Kashino", "Yuka Kawashima"]
+    var funnyNumbers: [Int] = [21, 69, 420, 67]
+
     var pi: Double = 3.141592
     var isAwesome: Bool = true
 
@@ -22,10 +25,14 @@ struct Main {
         print("\(age) year old \(name) founded \(town) which has a population of \(population)")
         print(multiLine)
     }
+
+    func isFunnyNumber(num: Int) -> Bool {
+        funnyNumbers.contains(num)
+    }
 }
 
 //TODO: Make this do more than print
 
-var main = Main()
+var main: Main = .init()
 
 main.printOutput()
