@@ -52,7 +52,7 @@ struct Main {
         "Quasimodo",
         "Elsa Falk"
     ])
-
+    
     var movies: Dictionary<String, Int> = [
         "Coma": 2022,
         "T Blockers": 2023,
@@ -88,3 +88,13 @@ very \(main.emotions[Int.random(in: 0...6)]).
 """)
 
 print(main.movies["The Matrix"] ?? "Unknown")
+
+print()
+
+main.darkLegion.insert("Johanna \"Jo\" Rogers")
+main.darkLegion.insert("Luke Rogers")
+main.darkLegion.insert("Niketa \"Nikki\" Morrigan")
+main.darkLegion.insert("Selene Archer")
+
+
+print(main.darkLegion.randomElement() ?? "Unknown")
