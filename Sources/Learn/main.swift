@@ -28,7 +28,8 @@ struct Main {
             "Dissapointed", 
             "Angry", 
             "Suprised", 
-            "Confused"
+            "Confused",
+            "Weird"
         ]
     var pi: Double = 3.141592
     var isAwesome: Bool = true
@@ -67,4 +68,4 @@ funny number, this makes \(main.perfume[Int.random(in: 0...3)])\
 very \(main.emotions[Int.random(in: 0...6)]).
 """)
 
-print(main.movies["The Matrix", default: 2000])
+print(main.movies["The Matrix"] ?? "Unknown")
