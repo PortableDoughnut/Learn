@@ -1,10 +1,18 @@
 import Foundation
 
+enum Genre {
+    case rock
+    case jazz
+    case hipHop
+    case pop
+}
+
 struct Main {
     var town: String = "sexo"
     var age: Int = 26
     var population: Int = 28_000_000
     var name: String = "Gwen"
+    var mingus: Genre = .jazz
 
     let zendaya: String = "meechee"
 
