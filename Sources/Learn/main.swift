@@ -17,6 +17,7 @@ struct Main {
 
     var perfume: [String] = ["Ayaka Nishiwaki", "Ayano Ōmoto", "Yuka Kashino", "Yuka Kawashima"]
     var funnyNumbers: [Int] = [21, 69, 420, 67]
+    var emotions: [String] = ["Happy", "Sad", "Frustrated", "Dissapointed", "Angry", "Suprised", "Confused"]
 
     var pi: Double = 3.141592
     var isAwesome: Bool = true
@@ -31,8 +32,15 @@ struct Main {
     }
 }
 
-//TODO: Make this do more than print
 
 var main: Main = .init()
 
 main.printOutput()
+
+var randomNumber: Int = Int.random(in: 21...420)
+
+print("""
+\(randomNumber) is \(main.isFunnyNumber(num: randomNumber) ? "a " : "not a ")\ 
+funny number, this makes \(main.perfume[Int.random(in: 0...3)])\
+very \(main.emotions[Int.random(in: 0...6)]).
+""")
