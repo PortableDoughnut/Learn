@@ -14,11 +14,22 @@ struct Main {
     Am
     Gwen
     """
-
-    var perfume: [String] = ["Ayaka Nishiwaki", "Ayano Ōmoto", "Yuka Kashino", "Yuka Kawashima"]
-    var funnyNumbers: [Int] = [21, 69, 420, 67]
-    var emotions: [String] = ["Happy", "Sad", "Frustrated", "Dissapointed", "Angry", "Suprised", "Confused"]
-
+    var perfume: Array<String> = [
+        "Ayaka Nishiwaki", 
+        "Ayano Ōmoto", 
+        "Yuka Kashino", 
+        "Yuka Kawashima"
+    ]
+    var funnyNumbers: Array<Int> = [21, 69, 420, 67]
+    var emotions: Array<String> = [
+            "Happy", 
+            "Sad", 
+            "Frustrated", 
+            "Dissapointed", 
+            "Angry", 
+            "Suprised", 
+            "Confused"
+        ]
     var pi: Double = 3.141592
     var isAwesome: Bool = true
 
