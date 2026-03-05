@@ -34,6 +34,25 @@ struct Main {
     var pi: Double = 3.141592
     var isAwesome: Bool = true
 
+    var darkLegion: Set<String> = ([
+        "Nick Morton",
+        "Chris Vail",
+        "Henry Jekyll",
+        "Victor Frakenstein",
+        "Gwen Conliffe",
+        "Larry Talbot",
+        "Jennifer Halsey",
+        "Carol Laemmle",
+        "Cassie Falk",
+        "Jack Griffin",
+        "Evelyn O'Connel",
+        "Hunter Marin",
+        "David Krumholtz",
+        "Marya Zaleska",
+        "Quasimodo",
+        "Elsa Falk"
+    ])
+
     var movies: Dictionary<String, Int> = [
         "Coma": 2022,
         "T Blockers": 2023,
