@@ -80,6 +80,17 @@ struct Main {
     }
 }
 
+func makeLowercased(str: String) -> String {
+    do {
+        if(str.contains(try Regex("[A-Z]"))) {
+            return str.lowercased()
+        } else {
+            return str
+        }
+    } catch {
+        return "Error"
+    }
+}
 
 var main: Main = .init()
 
@@ -106,3 +117,7 @@ main.darkLegion.insert("Selene Archer")
 
 
 print(main.darkLegion.randomElement() ?? "Unknown")
+
+print()
+print(makeLowercased(str: "Glinda"))
+print(makeLowercased(str: "sexo"))
